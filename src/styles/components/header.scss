@@ -1,0 +1,21 @@
+.container {
+  .headerContent {
+    .navbar {
+      margin-top: 20px;
+      .iconmenu {
+        width: 30px;
+        height: 20px;
+      }
+      .offcanvas-body {
+        .nav-item {
+          .nav-link:hover {
+            color: hsl(5, 85%, 63%);
+          }
+        }
+      }
+    }
+    @media (max-width: 375px) {
+      margin-top: 5px;
+    }
+  }
+}

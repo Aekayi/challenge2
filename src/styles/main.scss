@@ -7,8 +7,8 @@
 @use 'base/reset';
 @use 'base/base';
 
-// @use 'components/header';
-
+@use 'components/header';
+@use 'components/card';
 @use 'pages/home';
 @use 'pages/contact';
 @use 'pages/challenge2';

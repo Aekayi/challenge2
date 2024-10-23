@@ -1,3 +1,17 @@
 
-mixin Card()
-    header.container Hello
+mixin Card(title, text1, text2, imgSrc)
+        .col-md-4.col-sm-12.mt-5
+          .card.rounded-0.mb-3.border-0
+            .row.g-0
+              .col-4.mt-3
+                img(src=imgSrc, class="retroimg", alt=title)
+              .col-8
+                .card-body
+                  h1.card-title= title
+                  p.card-text.text1= text1 
+                  p.card-text.text2= text2
+          
+   
+            
+
+       

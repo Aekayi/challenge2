@@ -2,27 +2,40 @@ extends ../app
 
 block content
     .challenge-wrapper.container.text-center
-        .hero.row.row-cols-2
-            .bannerimg.col-md-9.mt-5 
-                img(src='@assets/images/image-web-3-desktop.jpg',class="desktopimg")
-                img(src='@assets/images/image-web-3-mobile.jpg',class="mobileimg")
-                .readmore.container.mt-3.d-flex
-                    .row.row-cols-2
-                    .col.text-start.ms-3.w-75.readmoretitle The Bright Future of Web 3.0? 
-                    .col.secondcol
-                        p.text-start.readmoretext.ms-5.mb-5 We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fullfill its promise?
-                        button.readmorebtn(href='/') reade more
-            .bannertext.col-md-3.mt-5 
-                .card.rounded-0.text-start
-                    h2.card-title.mb-5 New
-                    h5.title1 Hydrogen Vs Electric Cars
-                    p.card-text.mb-3 Why hydrogen-fueled cars ever catch up to EVs?
-                    hr.text-white
-                    h5.card-title.mb-3.mt-3 The Downsides of AI Artistry
-                    p.card-text.mb-3 Why hydrogen-fueled cars ever catch up to EVs?
-                    hr.text-white
-                    h5.title1.mb-3.mt-3 Is VC Funding Drying Up?
-                    p.card-text.mb-3 Why hydrogen-fueled cars ever catch up to EVs?
+        .container.mt-5.text-center
+            .row.hero
+                .col-md-9.col-sm-12 
+                    .bannerimg 
+                        img(src='@assets/images/image-web-3-desktop.jpg',class="desktopimg")
+                        img(src='@assets/images/image-web-3-mobile.jpg',class="mobileimg")
+                    .row.col-md-12.mt-3.readmoresection
+                        .col-12.col-md-6.readmoretitle The Bright Future of Web 3.0? 
+                        .col-12.col-md-6
+                            p.text-start.readmoretext.w-md-75.ms-md-5.mb-md-3 We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fullfill its promise?
+                            button.readmorebtn(href='/') reade more
+                .col-sm-12.col-md-3 
+                    .card.rounded-0.text-start
+                        h2.card-title.mb-3 New
+                        h5.title1 Hydrogen Vs Electric Cars
+                        p.card-text.mb-3 Why hydrogen-fueled cars ever catch up to EVs?
+                        hr.text-white
+                        h5.title2.mb-3.mt-3 The Downsides of AI Artistry
+                        p.card-text.mb-3 Why hydrogen-fueled cars ever catch up to EVs?
+                        hr.text-white
+                        h5.title1.mb-3.mt-3 Is VC Funding Drying Up?
+                        p.card-text.mb-3 Why hydrogen-fueled cars ever catch up to EVs?
+            .row
+                +Card('01', 'Reviving Retro PCs','What happens old PCs are given mordern upgrades?', '@assets/images/image-retro-pcs.jpg')
+                +Card('02', 'Top 10 Laptops of 2022','Our best pics for various needs and budgets.', '@assets/images/image-top-laptops.jpg')
+                +Card('03', 'The Growth of Gaming','How the pandemic has sparked fresh opportunities.', '@assets/images/image-gaming-growth.jpg')         
+                        
+
+
+ 
+ 
+
+
+
                     
       
                 

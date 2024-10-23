@@ -1,0 +1,40 @@
+.card {
+  .card-body {
+    text-align: left;
+
+    .card-title {
+      color: hsl(5, 85%, 63%);
+      font-weight: 700;
+    }
+    .text1 {
+      font-weight: 700;
+      color: hsl(240, 100%, 5%);
+      cursor: pointer;
+    }
+    .text1:hover {
+      color: hsl(5, 85%, 63%);
+    }
+    .text2 {
+      color: hsl(236, 13%, 42%);
+      font-size: 15px;
+    }
+    @media (max-width: 375px) {
+      .card-title {
+        margin-bottom: 0;
+      }
+      .text1 {
+        margin-bottom: 0;
+      }
+      .text2 {
+        font-size: 12px;
+      }
+    }
+  }
+  @media (max-width: 375px) {
+    .card-body {
+      padding: 0;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+  }
+}

@@ -2,25 +2,26 @@ mixin Header()
     header.container
       span.headerContent 
         nav.navbar.navbar-expand-lg
-          a.navbar-brand(href="#") Nav
-          button.navbar-toggler(type="button", data-bs-toggle="offcanvas", data-bs-target="#navbarOffcanvasLg", aria-controls="navbarOffcanvasLg", aria-label="Toggle navigation")
-            span.navbar-toggler-icon
-          .offcanvas.offcanvas-end(tabindex="-1", id="navbarOffcanvasLg", aria-labelledby="navbarOffcanvasLgLabel")
+          //- a.navbar-brand(href="#") 
+          img(src='@assets/images/logo.svg',class="logo")
+          button.navbar-toggler.border-0(type="button", data-bs-toggle="offcanvas", data-bs-target="#navbarOffcanvasLg", aria-controls="navbarOffcanvasLg", aria-label="Toggle navigation")
+            img(src='@assets/images/icon-menu.svg',class="iconmenu")
+            //- span.navbar-toggler-icon
+          .offcanvas.offcanvas-end.w-75(tabindex="-1", id="navbarOffcanvasLg", aria-labelledby="navbarOffcanvasLgLabel")
             .offcanvas-header
-                h5.offcanvas-title#offcanvasDarkNavbarLabel Dark offcanvas
-                button.btn-close.btn-close-white(type="button", data-bs-dismiss="offcanvas", aria-label="Close")
+              button.btn-close.btn-close-dark(type="button", data-bs-dismiss="offcanvas", aria-label="Close")
             .offcanvas-body
               ul.navbar-nav.justify-content-end.flex-grow-1
                 li.nav-item
-                  a.nav-link.active(aria-current="page", href="#") Home
+                  a.nav-link.me-3.active(aria-current="page", href="#") Home
                 li.nav-item
-                  a.nav-link(href="#") New
+                  a.nav-link.me-3(href="#") New
                 li.nav-item
-                  a.nav-link(href="#") Popular 
+                  a.nav-link.me-3(href="#") Popular 
                 li.nav-item
-                  a.nav-link(href="#") Trending
+                  a.nav-link.me-3(href="#") Trending
                 li.nav-item
-                  a.nav-link(href="#") Categories
+                  a.nav-link.me-3(href="#") Categories
                
                
                
